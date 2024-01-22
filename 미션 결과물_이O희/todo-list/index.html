@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo-list</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="task-input">
+        <input type="text" placeholder="할 일을 입력하세요" />
+      </div>
+      <div class="input">
+        <div class="badge">
+          <div class="choice">
+            <span id="normal" class="active">보통</span>
+            <span id="important">중요</span>
+            <span id="very-important">매우 중요</span>
+          </div>
+          <button class="clear-btn" onclick="submit()">추가</button>
+        </div>
+      </div>
+
+      <div class="controls">
+        <div class="filters">
+          <span id="all" class="active">전체</span>
+          <span id="pending">진행중</span>
+          <span id="completed">완료</span>
+        </div>
+      </div>
+      <ul class="task-box"></ul>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

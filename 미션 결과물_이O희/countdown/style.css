@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  height: 60vh;
+  width: 550px;
+  border: 1px solid black;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.container #disp {
+  height: 10vh;
+  width: 100%;
+  color: white;
+  text-align: center;
+  background-color: #8e44ad;
+  font-size: 40px;
+  line-height: 10vh;
+}
+
+.number-container {
+  height: 35vh;
+  width: 100%;
+  background-color: #fff;
+  line-height: 45vh;
+  text-align: center;
+}
+
+.number-container input {
+  width: 130px;
+  border: none;
+  outline: none;
+  border-bottom: 3px solid #8e44ad;
+  color: #8e44ad;
+  background-color: transparent;
+  font-size: 50px;
+  text-align: center;
+}
+
+.number-container span {
+  font-size: 20px;
+  color: #8e44ad;
+}
+
+.number-container input::placeholder {
+  font-size: 20px;
+  color: #8e44ad;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.container .btn {
+  height: 15vh;
+  width: 80%;
+  display: flex;
+  margin: auto;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.container .btn button {
+  padding: 5px 10px;
+  font-size: 20px;
+  color: fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.container .btn button:hover {
+  background-color: #321040;
+  color: white;
+}
